@@ -18,7 +18,8 @@ class ClientController extends Controller
         $array = [];
         foreach ($clients as $client) {
             $array[] = [
-                'id' => $client->name,
+                'id' => $client->id,
+                'name' => $client->name,
                 'email' => $client->email,
                 'phone' => $client->phone,
                 'address' => $client->address,
